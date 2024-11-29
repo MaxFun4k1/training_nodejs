@@ -47,7 +47,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // server.listen(3003)
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
-const port = 3000;
+const port = process.env.PORT || 5000;
 const HTTP_STATUSES = {
     OK_200: 200,
     CREATED_201: 201,
